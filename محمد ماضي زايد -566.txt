@@ -1,0 +1,54 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+
+public class Main
+{
+	public static void main(String[] args) {
+		
+		
+		
+		
+		int[] studentPercentage = {70,90,30,90,80,84,69,92,63,45};
+		String letterGrades[];
+		letterGrades = new String [10];
+		
+		for (int x = 0 ; x<studentPercentage.length ; x++  ){
+		    
+		letterGrades[x] = test (studentPercentage[x]);
+		
+		System.out.println(letterGrades[x]);
+		
+		}
+
+		}
+		
+	
+	
+	public static String test(int x){
+	    
+	     if (  x >= 90  ){
+	         return  "A";
+	         
+	     }else if (  x >= 80  ){
+	         return  "B";
+	         
+         }else if( x >= 70 ){
+             return  "C";
+             
+         }else if( x >= 60 ){
+             return  "D";
+             
+         }else {
+             return  "F";
+         }
+             
+	         
+             
+	}
+	
+}
